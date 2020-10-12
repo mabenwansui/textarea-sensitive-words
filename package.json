@@ -1,0 +1,49 @@
+{
+	"name": "textareaSensitiveWords",
+	"version": "1.0.0",
+	"description": "...",
+	"main": "src/index.js",
+	"module": "src/index.js",
+	"typings": "src/index.d.ts",
+	"sideEffects": [],
+	"files": [
+		"src"
+	],
+	"scripts": {
+		"start": "fet-service start",
+		"start:source": "fet-service start:source",
+		"test": "jest",
+		"dev": "fet-service dev",
+		"clear": "fet-service clear",
+		"update": "fet-service update",
+		"fix": "fet-service fix",
+		"svgo": "fet-service svgOptimizer",
+		"analyz": "npm_config_report=true fet-service analyzer"
+	},
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/plugin-transform-modules-commonjs": "^7.10.1",
+		"@hot-loader/react-dom": "^16.13.x",
+		"@tools/webpack": "^1.x",
+		"antd": "^4.7.0",
+		"antd-dayjs-webpack-plugin": "0.0.8",
+		"axios": "^0.19.x",
+		"classnames": "^2.2.x",
+		"core-js": "^3.6.4",
+		"jest": "^26.0.1",
+		"mobx": "^4.x",
+		"mobx-react-lite": "^2.x",
+		"moment": "^2.24.0",
+		"prop-types": "^15.x",
+		"react": "^16.13.x",
+		"react-dom": "^16.13.x",
+		"react-router-dom": "^5.1.x",
+		"react-test-renderer": "^16.13.1"
+	}
+}

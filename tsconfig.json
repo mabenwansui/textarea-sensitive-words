@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es2018", "dom"],
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "declarationDir": "./distType",
+    "allowJs": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["./*"]
+    }
+  },
+  "include": ["src", "example", "types"],
+  "exclude": ["node_modules"]
+}

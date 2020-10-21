@@ -7,19 +7,15 @@ import 'regenerator-runtime/runtime'
 // 为了支持热重热
 import { hot } from 'react-hot-loader'
 
-/*
- * 解决mobx-react-lite黄条警告
- * https://github.com/mobxjs/mobx-react-lite/#observer-batching
- */
-import 'mobx-react-lite/batchingForReactDom'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from '@src'
 import { ConfigProvider } from 'antd'
 import zhCN from 'antd/es/locale/zh_CN'
 
-const WarpApp = hot(module)(() => <App />)
+const WarpApp = hot(module)(()=> <App highlightWords = {['猎聘', '最[好]', '最']} defaultVal="覅哦额喷气机最佛前最诶文件" onChange={(isWarning, html)=> {
+  console.log(isWarning, html)
+}} />)
 
 ReactDOM.render(
   <ConfigProvider locale={zhCN}>
